@@ -1,0 +1,80 @@
+.is-loading {
+  width: 200px;
+  height: 20px;
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+  background-color: #ececec;
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-100%);
+    content: '';
+    background: linear-gradient(0.25turn, transparent, #fff, transparent);
+    pointer-events: none;
+    opacity: 0.8;
+    animation: skeleton-animation 2s infinite;
+  }
+
+  &:nth-of-type(2) {
+    width: 170px;
+  }
+}
+
+@keyframes skeleton-animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  30% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.content-layout {
+  padding: 12px 24px;
+}
+
+.btn {
+  margin: 0 10px;
+}
+
+.action-row {
+  padding: 20px 25px;
+}
+
+.table-action-panel {
+  .btn-update {
+    cursor: pointer;
+    color: #1890ff;
+    margin: 0 10px;
+  }
+  .btn-delete {
+    cursor: pointer;
+    color: #1890ff;
+    margin: 0 10px;
+  }
+}
+
+.app-popup-modal {
+  .ant-modal-header {
+    .ant-modal-title {
+      font-size: 16px;
+      font-weight: 650;
+      color: rgba(0, 0, 0, 0.65);
+    }
+  }
+
+  .ant-modal-body {
+    padding: 24px 0;
+  }
+
+  .popup-modal-footer {
+    padding: 5px 0;
+  }
+}
