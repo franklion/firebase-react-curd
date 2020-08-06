@@ -5,6 +5,14 @@
 - 使用 firebase 進行 CRUD
 - 搭配 ant design
 
+## Scripts
+
+    npm run start
+
+    npm rum build
+
+    firebase deploy
+
 ## Demo url
 
 - https://test-firebase-react-b2b0b.web.app/
