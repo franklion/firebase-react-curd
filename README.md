@@ -1,4 +1,4 @@
-# test-firebase-react
+# Firebase-React-CRUD
 
 ## Goal
 
