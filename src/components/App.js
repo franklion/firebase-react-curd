@@ -16,9 +16,7 @@ import { Divider, message } from 'antd';
 const rootRef = base.database().ref();
 
 function App() {
-  const [isLoading, list, pageInfo, onTableChange, , reset] = useFetchList({
-    ...cons.FETCH_LIST_CONFIG
-  });
+  const [isLoading, list, pageInfo, onTableChange, reset] = useFetchList(cons.FETCH_LIST_CONFIG);
   const [isTriggerCreate, setIsTriggerCreate] = useState(false);
   const [currentRecord, setCurrentRecord] = useState(null);
 

@@ -18,7 +18,7 @@ export const useFetchList = ({ initFilter, initPageInfo, isFetchListAtMount = tr
       rootRef.on(
         'value',
         function (snapshot) {
-          console.log('debugger:', snapshot.val());
+          // console.log('debugger:', snapshot.val());
           let list = [];
           let total = 0;
 
@@ -90,7 +90,7 @@ export const useFetchList = ({ initFilter, initPageInfo, isFetchListAtMount = tr
     }
   }, [fetchList]);
 
-  return [isLoading, list, pageInfo, onTableChange, fetchList, reset];
+  return [isLoading, list, pageInfo, onTableChange, reset];
 };
 
 export const usePopupModal = () => {
